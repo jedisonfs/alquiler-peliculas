@@ -14,7 +14,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "direccion")
-public class DireccionEntity implements Serializable {
+public class Direccion implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -80,7 +80,7 @@ public class DireccionEntity implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		DireccionEntity other = (DireccionEntity) obj;
+		Direccion other = (Direccion) obj;
 		return Objects.equals(ciudad, other.ciudad) && Objects.equals(direccion, other.direccion)
 				&& Objects.equals(idDireccion, other.idDireccion) && Objects.equals(pais, other.pais);
 	}

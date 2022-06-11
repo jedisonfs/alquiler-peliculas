@@ -42,7 +42,7 @@ public class PeliculaEntity implements Serializable {
 	@NotNull
 	@OneToOne
 	@JoinColumn(name = "id_categoria", foreignKey = @ForeignKey(name = "fk_id_categoria"), referencedColumnName = "id_categoria")
-	private CategoriaEntity idCategoria;
+	private Categoria idCategoria;
 
 	@OneToMany(mappedBy = "idPelicula")
 	private List<InventarioEntity> inventario;
@@ -87,11 +87,11 @@ public class PeliculaEntity implements Serializable {
 		this.año = año;
 	}
 
-	public CategoriaEntity getIdCategoria() {
+	public Categoria getIdCategoria() {
 		return idCategoria;
 	}
 
-	public void setIdCategoria(CategoriaEntity idCategoria) {
+	public void setIdCategoria(Categoria idCategoria) {
 		this.idCategoria = idCategoria;
 	}
 

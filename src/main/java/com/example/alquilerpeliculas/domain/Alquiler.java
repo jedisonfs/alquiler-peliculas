@@ -16,7 +16,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "alquiler")
-public class AlquilerEntity implements Serializable {
+public class Alquiler implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -92,7 +92,7 @@ public class AlquilerEntity implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		AlquilerEntity other = (AlquilerEntity) obj;
+		Alquiler other = (Alquiler) obj;
 		return Objects.equals(idAlquiler, other.idAlquiler) && Objects.equals(fechAlquiler, other.fechAlquiler)
 				&& Objects.equals(fechDevolucion, other.fechDevolucion) && Objects.equals(idCliente, other.idCliente)
 				&& Objects.equals(idInventario, other.idInventario);

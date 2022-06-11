@@ -15,7 +15,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "categoria")
-public class CategoriaEntity implements Serializable {
+public class Categoria implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -68,7 +68,7 @@ public class CategoriaEntity implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CategoriaEntity other = (CategoriaEntity) obj;
+		Categoria other = (Categoria) obj;
 		return Objects.equals(idCategoria, other.idCategoria) && Objects.equals(nombre, other.nombre)
 				&& Objects.equals(pelicula, other.pelicula);
 	}

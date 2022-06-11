@@ -42,7 +42,7 @@ public class ClienteEntity implements Serializable {
 	@NotNull
 	@OneToOne
 	@JoinColumn(name = "fk_id_direccion", foreignKey = @ForeignKey(name = "fk_id_direccion"), referencedColumnName = "id_direccion")
-	private DireccionEntity direccion;
+	private Direccion direccion;
 
 	public Integer getIdCliente() {
 		return idCliente;
@@ -76,11 +76,11 @@ public class ClienteEntity implements Serializable {
 		this.fechaNac = fechaNac;
 	}
 
-	public DireccionEntity getDireccion() {
+	public Direccion getDireccion() {
 		return direccion;
 	}
 
-	public void setDireccion(DireccionEntity direccion) {
+	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
 	}
 

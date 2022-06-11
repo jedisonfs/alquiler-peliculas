@@ -3,10 +3,8 @@ package com.example.alquilerpeliculas.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -27,7 +25,7 @@ public class InventarioEntity implements Serializable {
 	@Column(name = "id_inventario")
 	private Integer idInventario;
 
-	private Integer disponible;
+	private Boolean disponible;
 
 	@NotNull
 	@ManyToOne(optional = false)
@@ -42,11 +40,11 @@ public class InventarioEntity implements Serializable {
 		this.idInventario = idInventario;
 	}
 
-	public Integer getDisponible() {
+	public Boolean getDisponible() {
 		return disponible;
 	}
 
-	public void setDisponible(Integer disponible) {
+	public void setDisponible(Boolean disponible) {
 		this.disponible = disponible;
 	}
 
