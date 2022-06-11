@@ -8,5 +8,5 @@ import com.example.alquilerpeliculas.dto.DireccionDto;
 @Service
 public interface IDireccionService {
 
-	Direccion insertDireccion(DireccionDto direccionDTO);
+	DireccionDto insertDireccion(DireccionDto direccionDTO);
 }
